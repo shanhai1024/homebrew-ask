@@ -5,21 +5,21 @@
 class Ask < Formula
   desc "Your AI Terminal Expert | 你的 AI 终端指令专家"
   homepage "https://github.com/shanhai1024/aiAsk"
-  version "1.0.0"
+  version "1.0.1"
   license "MIT"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/shanhai1024/aiAsk/releases/download/v1.0.0/aiAsk_1.0.0_darwin_amd64.tar.gz"
-      sha256 "02903c23e4aefecc7d1c959dd9fd0378489f8e9c003edb175476335f0d2196d0"
+      url "https://github.com/shanhai1024/aiAsk/releases/download/v1.0.1/aiAsk_1.0.1_darwin_amd64.tar.gz"
+      sha256 "16a639bf9486862fafc842ae94cdb67250f02b7c8c0e5405147b5c620b6ff86b"
 
       def install
         bin.install "ask"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/shanhai1024/aiAsk/releases/download/v1.0.0/aiAsk_1.0.0_darwin_arm64.tar.gz"
-      sha256 "e32e3ab4c6d448c1172c1d55a8281634d72e632ff88f89203239023709e7b7bf"
+      url "https://github.com/shanhai1024/aiAsk/releases/download/v1.0.1/aiAsk_1.0.1_darwin_arm64.tar.gz"
+      sha256 "6545db4e6c86f9e021630359471955a339566c8afd8879ff0c4d9dd059582b73"
 
       def install
         bin.install "ask"
@@ -29,15 +29,15 @@ class Ask < Formula
 
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
-      url "https://github.com/shanhai1024/aiAsk/releases/download/v1.0.0/aiAsk_1.0.0_linux_amd64.tar.gz"
-      sha256 "16a8cb6fd6c7b9efbcf963402a592c38fb6bb21f77fc53db70085016071f7a96"
+      url "https://github.com/shanhai1024/aiAsk/releases/download/v1.0.1/aiAsk_1.0.1_linux_amd64.tar.gz"
+      sha256 "13484f91e3860d22a20ddfcc06e7b76b2cd8b6a0cad83cb778ed8dc1624c6873"
       def install
         bin.install "ask"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/shanhai1024/aiAsk/releases/download/v1.0.0/aiAsk_1.0.0_linux_arm64.tar.gz"
-      sha256 "88b0e22b15a0129fd423d665ccd3460e1d64ac8e9a5c0f466f4e43fe4867c29c"
+      url "https://github.com/shanhai1024/aiAsk/releases/download/v1.0.1/aiAsk_1.0.1_linux_arm64.tar.gz"
+      sha256 "a1031191cbb37fb2d44e41b52ce581c05c036c25cf3ad5b01ef280e022ab7a4e"
       def install
         bin.install "ask"
       end
